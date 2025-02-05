@@ -1,0 +1,20 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToe.MainPage">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Label x:Name="statusLabel" Text="Oczekiwanie na serwer..." FontSize="20" HorizontalOptions="Center" />
+
+        <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
+            <Button x:Name="btn0" Grid.Row="0" Grid.Column="0" Clicked="OnButtonClicked"/>
+            <Button x:Name="btn1" Grid.Row="0" Grid.Column="1" Clicked="OnButtonClicked"/>
+            <Button x:Name="btn2" Grid.Row="0" Grid.Column="2" Clicked="OnButtonClicked"/>
+            <Button x:Name="btn3" Grid.Row="1" Grid.Column="0" Clicked="OnButtonClicked"/>
+            <Button x:Name="btn4" Grid.Row="1" Grid.Column="1" Clicked="OnButtonClicked"/>
+            <Button x:Name="btn5" Grid.Row="1" Grid.Column="2" Clicked="OnButtonClicked"/>
+            <Button x:Name="btn6" Grid.Row="2" Grid.Column="0" Clicked="OnButtonClicked"/>
+            <Button x:Name="btn7" Grid.Row="2" Grid.Column="1" Clicked="OnButtonClicked"/>
+            <Button x:Name="btn8" Grid.Row="2" Grid.Column="2" Clicked="OnButtonClicked"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
